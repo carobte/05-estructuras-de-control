@@ -3,7 +3,7 @@ console.log("Estructura de control pt.1")
 /* console.log(8 < 10) //true
 console.log("8" >= 6) //true */
 
-console.group("If, if else, if else if, switch")
+console.group("Condicionales: If, if else, if else if, switch")
 
 /* 
 let hora = 13
@@ -60,14 +60,14 @@ if (numeroMes <= 3 && numeroMes >= 1){
         break;
 } */
 
-console.info(
-    `Menu: 
-1. Solicitar almuerzo.
-2. Solicitar domicilio
-3. Cancelar orden
-4. Finalizar programa`)
 
-let opcion = parseInt(prompt("Ingresa una de las opciones del menú"))
+/* let opcion = parseInt(prompt(`Ingresa una de las siguientes opciones: 
+
+1. Solicitar almuerzo.
+2. Solicitar domicilio.
+3. Cancelar orden.
+4. Finalizar programa.
+`))
 
 switch (opcion) {
     case 1:
@@ -85,6 +85,6 @@ switch (opcion) {
     default:
         console.log("Opción incorrecta. Debes ingresar una opción del 1 al 4")
         break;
-}
+} */
 
 console.groupEnd()
