@@ -3,7 +3,7 @@ console.log("Estructura de control pt.1")
 /* console.log(8 < 10) //true
 console.log("8" >= 6) //true */
 
-console.group("Condicionales: If, if else, if else if, switch")
+console.groupCollapsed("Condicionales: If, if else, if else if, switch")
 
 /* 
 let hora = 13
@@ -87,4 +87,86 @@ switch (opcion) {
         break;
 } */
 
+console.groupEnd()
+
+console.group("Bucles")
+console.groupCollapsed("For")
+//   inicio; condición; aumento
+for (let i = 0; i < 10; i++) {
+    console.log(`Hola mundo, vuelta: ${i}`)
+}
+console.groupEnd()
+
+console.groupCollapsed("Tablas de multiplicar")
+
+/* Tablas de multiplicar
+
+// opción 1:
+
+let tablas = []
+
+for (let i = 1; i <=10; i++) {
+    tablas.push(1*i)
+    tablas.push(2*i)
+    tablas.push(3*i)
+    tablas.push(4*i)
+    tablas.push(5*i)
+    tablas.push(6*i)
+    tablas.push(7*i)
+    tablas.push(8*i)
+    tablas.push(9*i)
+    tablas.push(10*i)
+}
+console.log("Tablas de multiplicar:")
+console.table(tablas) 
+
+//-----------------------------------
+
+// Opción 2:
+
+function tablaMultiplicar(num) {
+    let tabla = []
+    
+    for (let index = 1; index <= 10; index++) {
+        tabla.push( num * index)
+    }
+    console.log(`Tabla de multiplicar del ${num}`)
+    console.table(tabla)
+}
+
+tablaMultiplicar(1)
+tablaMultiplicar(2)
+tablaMultiplicar(3)
+tablaMultiplicar(4)
+tablaMultiplicar(5)
+tablaMultiplicar(6)
+tablaMultiplicar(7)
+tablaMultiplicar(8)
+tablaMultiplicar(9)
+tablaMultiplicar(10) 
+
+//-----------------------------------*/
+
+// Opción 3 con doble for:
+
+for (let i = 1; i <= 10; i++) {
+    console.groupCollapsed("Tabla del", i)
+    for (let j = 1; j <= 10; j++) {
+        console.log(`${i} x ${j} = ${i * j}`)
+    }
+    console.groupEnd()
+}
+
+console.groupEnd()
+
+console.groupCollapsed("While")
+console.groupCollapsed("Tabla del 9")
+let contador = 1
+
+while (contador <= 10) {
+    console.log(`9 x ${contador} = ${9 * contador}`)
+    contador++
+    // contador = contador +1
+}
+console.groupEnd()
 console.groupEnd()
