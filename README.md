@@ -1,2 +1,3 @@
-# 05-estructuras-de-control
-Ejercicios sesión 5 - Estructuras de control - JS Riwi
+# 05 Estructuras de control
+
+Estructuras de control - JS Riwi
